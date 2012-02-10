@@ -5,74 +5,164 @@ body{
 	background-color: black;
 }
 
-nav{	
+/* Floats nav to upper right corner. */
+nav{
 	float: right;
 }
 
+/* Places nav on one line*/
+.logonav ul li{
+	  display: inline;
+	  float: right;
+}
+
+/* Removes underline from nav anchors*/
+.logonav ul li a{
+	text-decoration: none;
+}	
+
+/* Removes style type from the list items ie..dots/circles*/	
+.nav_list{
+	list-style-type: none;
+}
+
+/* Places border style around nav*/
+.nav_anchor{
+ 	border: 2px solid #cc9933;
+ 	border-radius: 10px;
+ 	padding: 5px;
+ 	margin: 10px;
+}
+
+/* Clears bottom of logo and nav area from future text wrapping of below content. */
 .logonav{
 	clear: both;
 }
 
-h1, h2, h3{
+/* Sets font type for headers and anchors. */
+h1, h2, h3, a{
 	font-family: "Emblema One", cursive;
 	font-weight: 400;
+	text-shadow: 6px 6px 6px gray;
 }
 
+/* Sets basic paragraph text color*/
 p{
 	color: silver;
 }
+
+/* Setsup CTA with image, background and border. */
 .cta{
-	background-image: url("../Images/background.jpg");
-	background-position: center center;
+	background-image: url("../images/background.jpg");
+	background-position: center center opacity: .9;
 	border-style: solid;
 	border-radius: 20px;
 	border-width: 4px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	padding-right: 20px;
 	box-shadow: 6px 6px 6px gray;
 }
 
+/* Makes the cta_img (jedi knight) float to the left. */
 .cta_img{
 	float: left;
-	clear: both;
 }
 
-.guildname{
-	clear: right;
-}	
-.intro{
-	/*border-style: solid;*/
+/* Sets font color of guild 'about' paragraph. */
+.about{
+	color: silver;
+	text-shadow: 8px 8px 8px black;
 }
+
+/* Places some padding between the news section and the CTA and clears bottom floats. */
 #news{
 	padding-top: 100px;
 	clear: both;	
 }
 
+/* Places the news text into 3 column layout and places padding between the news and gallery. */
 .current_news{
 	-moz-column-count: 3;
 	-moz-column-gap: 25px;
 	padding-bottom: 100px;
 }
 
-.gallery{
-	-moz-column-count: 3;
-	-moz-column-gap: 25px
-}
-
-ul{
-	border: 2px solid silver;
+/* Setsup the gallery pics in a row, places border and margins/padding. */
+.gallery_list{
+	border: 2px solid #cc9933;
+	border-radius: 20px;
 	list-style-type: none;
-	width: 527px;
+	width: 640px;
 	margin: 20px auto;
 	overflow: hidden;
 	padding: 5px;
 }
-li{
+
+/* Makes gallery float to left. */
+.gallery_pic{
 	float: left;
-	margin-left; 19px
+	margin-left: 20px;
+	border: 2px solid silver;
 }
 
+/* Clears top of footer to prevent floating of future content. */
 footer{
 	clear: both;
-	
+}
+
+/* Following <a> lines setup the color for different anchor states. */
+a:link{
+	color: #cc9933;
+}
+
+a:visited{
+	color: silver;
+}
+
+a:hover{
+	color: blue;
+}
+
+a:active{
+	color: red;
+}
+
+/* BUTTON TRIAL...hope it works--------------------------------------------------------------*/
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 22px/100% Emblema One, cursive;
+	padding: 20px 60px 22px;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.join {
+	color: #cc9933;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+}
+
+.join:hover {
+	background: silver;
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+}
+
+.join:active {
+	color: red;
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 }
