@@ -53,7 +53,7 @@ p{
 
 /* Setsup CTA with image, background and border. */
 .cta{
-	background-image: url("../images/background.jpg");
+	background-image: url("../Images/background.jpg");
 	background-position: center center opacity: .9;
 	border-style: solid;
 	border-radius: 20px;
