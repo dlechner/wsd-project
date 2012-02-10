@@ -54,7 +54,7 @@ p{
 /* Setsup CTA with image, background and border. */
 .cta{
 	background-image: url("../Images/background.jpg");
-	background-position: center center opacity: .9;
+	background-position: center center opacity:0.9;
 	border-style: solid;
 	border-radius: 20px;
 	border-width: 4px;
@@ -127,7 +127,7 @@ a:active{
 	color: red;
 }
 
-/* BUTTON TRIAL...hope it works--------------------------------------------------------------*/
+/* BUTTON TRIAL...hope it works*/
 .button {
 	display: inline-block;
 	outline: none;
