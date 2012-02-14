@@ -1,5 +1,6 @@
 body{
 	color: #cc9933;
+	font: 100%/1.5, Arial;
 	width: 790px;
 	margin: 0 auto;
 	background-color: black;
@@ -12,26 +13,27 @@ nav{
 
 /* Places nav on one line*/
 .logonav ul li{
-	  display: inline;
 	  float: right;
 }
-
-/* Removes underline from nav anchors*/
-.logonav ul li a{
-	text-decoration: none;
-}	
 
 /* Removes style type from the list items ie..dots/circles*/	
 .nav_list{
 	list-style-type: none;
+	padding: 0;
 }
 
 /* Places border style around nav*/
 .nav_anchor{
  	border: 2px solid #cc9933;
  	border-radius: 10px;
+ 	display: block;
+ 	height: 20px;
+ 	overflow: hidden;
+ 	line-height: 20px;
+ 	text-align: center;
  	padding: 5px;
  	margin: 10px;
+ 	text-decoration: none; /* Removes underline from nav anchors. */
 }
 
 /* Clears bottom of logo and nav area from future text wrapping of below content. */
@@ -41,20 +43,22 @@ nav{
 
 /* Sets font type for headers and anchors. */
 h1, h2, h3, a{
-	font-family: "Emblema One", cursive;
-	font-weight: 400;
+	font-family: "Emblema One", cursive; /* Custom font from googlefonts */
+	font-weight: normal;
 	text-shadow: 6px 6px 6px gray;
 }
 
 /* Sets basic paragraph text color*/
 p{
 	color: silver;
+	font-size: 1.0em;
 }
 
 /* Setsup CTA with image, background and border. */
 .cta{
-	background-image: url("../Images/background.jpg");
-	background-position: center center opacity:0.9;
+	background-image: url("../images/background.jpg");
+	background-position: center center opacity: .9;
+	background-repeat: none;
 	border-style: solid;
 	border-radius: 20px;
 	border-width: 4px;
@@ -71,7 +75,8 @@ p{
 /* Sets font color of guild 'about' paragraph. */
 .about{
 	color: silver;
-	text-shadow: 8px 8px 8px black;
+	/*text-shadow: 8px 8px 8px black;*/
+	font-size: 1em;
 }
 
 /* Places some padding between the news section and the CTA and clears bottom floats. */
@@ -121,13 +126,14 @@ a:visited{
 
 a:hover{
 	color: blue;
+	background: #cc9933;
 }
 
 a:active{
 	color: red;
 }
 
-/* BUTTON TRIAL...hope it works*/
+/* BUTTON TRIAL...hope it works--------------------------------------------------------------*/
 .button {
 	display: inline-block;
 	outline: none;
