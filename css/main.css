@@ -1,64 +1,74 @@
 body{
 	color: #cc9933;
-	font: 100%/1.5, Arial;
-	width: 790px;
+	max-width: 790px;
 	margin: 0 auto;
-	background-color: black;
+	background: black;	
 }
 
-/* Floats nav to upper right corner. */
+/* Floats the logo to left corner of page.*/
+.logo{
+	float: left;
+}
+
+/* START Navigation Bar-------------------------------------------------------*/
+
+/*Floats the nav element to upper right of page.*/
 nav{
-	float: right;
+	float: right; 
 }
 
-/* Places nav on one line*/
-.logonav ul li{
-	  float: right;
-}
-
-/* Removes style type from the list items ie..dots/circles*/	
-.nav_list{
+.navbar{
+	width: 425px;
+	margin: 10 auto;
 	list-style-type: none;
 	padding: 0;
+	overflow: hidden;	
 }
 
-/* Places border style around nav*/
-.nav_anchor{
- 	border: 2px solid #cc9933;
- 	border-radius: 10px;
- 	display: block;
- 	height: 20px;
- 	overflow: hidden;
- 	line-height: 20px;
- 	text-align: center;
- 	padding: 5px;
- 	margin: 10px;
- 	text-decoration: none; /* Removes underline from nav anchors. */
+.nav_li{
+	width: 100px;
+	float: left;
 }
 
-/* Clears bottom of logo and nav area from future text wrapping of below content. */
-.logonav{
-	clear: both;
+/*Adds style to navbar anchors.*/
+.navbar a{
+	border: 2px solid #cc9933;
+	border-radius: 10px;
+	text-decoration: none;
+	overflow: hidden;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 5px;
 }
 
-/* Sets font type for headers and anchors. */
-h1, h2, h3, a{
-	font-family: "Emblema One", cursive; /* Custom font from googlefonts */
-	font-weight: normal;
-	text-shadow: 6px 6px 6px gray;
+/*Adds style to the different states of nav anchors.*/
+.navbar a:link{
+	color: #cc9933;
 }
 
-/* Sets basic paragraph text color*/
-p{
+.navbar a:visited{
 	color: silver;
-	font-size: 1.0em;
 }
+
+.navbar a:hover{
+	color: blue;
+	background: #cc9933;
+}
+
+.navbar a:active{
+	color: red;
+}
+/* END Navigation Bar---------------------------------------------------------*/
+
+/* START Call To Action CTA---------------------------------------------------*/
 
 /* Setsup CTA with image, background and border. */
 .cta{
-	background-image: url("../Images/background.jpg");
-	background-position: center center opacity: .9;
-	background-repeat: none;
+	background-image: url("../images/background.jpg");
+	background-position: center center;
+	/*background-repeat: none;*/
 	border-style: solid;
 	border-radius: 20px;
 	border-width: 4px;
@@ -66,74 +76,13 @@ p{
 	padding-right: 20px;
 	box-shadow: 6px 6px 6px gray;
 }
-
-/* Makes the cta_img (jedi knight) float to the left. */
 .cta_img{
 	float: left;
 }
+/* END CTA--------------------------------------------------------------------*/
 
-/* Sets font color of guild 'about' paragraph. */
-.about{
-	color: silver;
-	/*text-shadow: 8px 8px 8px black;*/
-	font-size: 1em;
-}
+/* START Join Button----------------------------------------------------------*/
 
-/* Places some padding between the news section and the CTA and clears bottom floats. */
-#news{
-	padding-top: 100px;
-	clear: both;	
-}
-
-/* Places the news text into 3 column layout and places padding between the news and gallery. */
-.current_news{
-	-moz-column-count: 3;
-	-moz-column-gap: 25px;
-	padding-bottom: 100px;
-}
-
-/* Setsup the gallery pics in a row, places border and margins/padding. */
-.gallery_list{
-	border: 2px solid #cc9933;
-	border-radius: 20px;
-	list-style-type: none;
-	width: 640px;
-	margin: 20px auto;
-	overflow: hidden;
-	padding: 5px;
-}
-
-/* Makes gallery float to left. */
-.gallery_pic{
-	float: left;
-	margin-left: 20px;
-	border: 2px solid silver;
-}
-
-/* Clears top of footer to prevent floating of future content. */
-footer{
-	clear: both;
-}
-
-/* Following <a> lines setup the color for different anchor states. */
-a:link{
-	color: #cc9933;
-}
-
-a:visited{
-	color: silver;
-}
-
-a:hover{
-	color: blue;
-	background: #cc9933;
-}
-
-a:active{
-	color: red;
-}
-
-/* BUTTON TRIAL...hope it works--------------------------------------------------------------*/
 .button {
 	display: inline-block;
 	outline: none;
@@ -172,3 +121,57 @@ a:active{
 	color: red;
 	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 }
+/*END Join Button-------------------------------------------------------------*/
+
+/*START News and Information--------------------------------------------------*/
+
+/* Places some spacing between the news section and the CTA. */
+#news{
+	margin-top: 100px;	
+}
+
+/* Places the news text into 3 column layout and places padding between the news and gallery. */
+.current_news{
+	-moz-column-count: 3;
+	-moz-column-gap: 25px;
+	padding-bottom: 100px;
+}
+/*END News and Information----------------------------------------------------*/
+
+/*START Gallery---------------------------------------------------------------*/
+/*Places border, removes list buttons, sets up padding to gallery thumbnails.*/
+.gallery_list{
+	border: 2px solid #cc9933;
+	border-radius: 20px;
+	list-style-type: none;
+	width: 640px;
+	margin: 20px auto;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.gpic_li{
+	float: left;
+	margin-left: 23px;
+	border: 2px solid silver;
+}
+/*END Gallery-----------------------------------------------------------------*/
+
+/*START Misc Coding-----------------------------------------------------------*/
+
+h1, h2, h3, a{
+	font-family: "Emblema One", cursive; /* Custom font from googlefonts */
+	text-shadow: 2px 2px 2px gray;
+}
+
+
+/*Sets basic color of paragraphs.*/
+p{
+	color: silver;
+}
+
+/*Clears the floats of elements above it.*/
+.cleardiv{
+	clear: both; 
+}
+/*END Misc Coding-------------------------------------------------------------*/
