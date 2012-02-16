@@ -1,46 +1,62 @@
 body{
 	color: #cc9933;
-	max-width: 790px;
+	max-width: 960px;
+	font: 100%;/*16px*/
 	margin: 0 auto;
-	background: black;	
+	background: black;
 }
 
-/* Floats the logo to left corner of page.*/
+#wrapper{
+	width: 82.291667%; /*790px/960px*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* Floats the logo to left corner of page and makes responsive.*/
 .logo{
 	float: left;
 }
 
-/* START Navigation Bar-------------------------------------------------------*/
+#logo_container{
+	width: 37.974684%;/*300px/790px*/
+}
+
+#logo_container img{
+	max-width: 100%;
+}
+
+
+/* START Navigation Bar=======================================================*/
 
 /*Floats the nav element to upper right of page.*/
 nav{
-	float: right; 
+	float: right;
 }
 
 .navbar{
-	width: 425px;
-	margin: 10 auto;
+	width: 100%; /*425px*/
+	margin: 2.3529412% /*10/425*/ auto;
 	list-style-type: none;
-	padding: 0;
+	padding-left: 9.4117647%; /*40px/425px*/
 	overflow: hidden;	
 }
 
 .nav_li{
-	width: 100px;
+	width: 6.25em; /*100px; /*23.529412%; /*100px/435px*/
 	float: left;
 }
 
 /*Adds style to navbar anchors.*/
 .navbar a{
-	border: 2px solid #cc9933;
-	border-radius: 10px;
+	border: 0.125em /*2px*/ solid #cc9933;
+	border-radius: 0.625em; /*10px;*/
 	text-decoration: none;
 	overflow: hidden;
 	display: block;
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
-	margin: 5px;
+	margin: 0.313em; /*5px;*/
 }
 
 /*Adds style to the different states of nav anchors.*/
@@ -60,28 +76,35 @@ nav{
 .navbar a:active{
 	color: red;
 }
-/* END Navigation Bar---------------------------------------------------------*/
+/* END Navigation Bar=========================================================*/
 
-/* START Call To Action CTA---------------------------------------------------*/
+/* START Call To Action CTA===================================================*/
 
 /* Setsup CTA with image, background and border. */
 .cta{
 	background-image: url("../Images/background.jpg");
-	background-position: center center;
-	/*background-repeat: none;*/
+	background-position: center center; opacity: .99;
 	border-style: solid;
-	border-radius: 20px;
-	border-width: 4px;
-	padding-bottom: 50px;
-	padding-right: 20px;
-	box-shadow: 6px 6px 6px gray;
+	border-radius: 1.25em; /*20px;*/
+	border-width: 0.25em; /*4px;*/
+	padding-bottom: 3.125em; /*50px;*/
+	padding-right: 1.25em; /*20px;*/
+	box-shadow: 0.375em 0.375em 0.375em /*6px 6px 6px*/ gray;
 }
 .cta_img{
 	float: left;
 }
-/* END CTA--------------------------------------------------------------------*/
 
-/* START Join Button----------------------------------------------------------*/
+#jedi_container{
+	width: 53.670886%;/*424px/790px*/
+}
+
+#jedi_container img{
+	max-width: 100%;
+}
+/* END CTA====================================================================*/
+
+/* START Join Button==========================================================*/
 
 .button {
 	display: inline-block;
@@ -89,25 +112,25 @@ nav{
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
-	font: 22px/100% Emblema One, cursive;
-	padding: 20px 60px 22px;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	font: 1.375em/100% /*22px/100%*/ Emblema One, cursive;
+	padding: 1.25em 3.75em 1.375em; /*20px 60px 22px;*/
+	text-shadow: 0.125em 0.125em 0.125em /*2px 2px 2px*/ black;
 	-moz-border-radius: .5em;
 	border-radius: .5em;
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0.125em 0.24em /*2px 4px*/ rgba(0,0,0,.2);
+	box-shadow: 0 0.125em 0.24em /*2px 4px*/ rgba(0,0,0,.2);
 }
 .button:hover {
 	text-decoration: none;
 }
 .button:active {
 	position: relative;
-	top: 1px;
+	top: .12em; /*1px;*/
 }
 
 .join {
 	color: #cc9933;
-	border: solid 1px #da7c0c;
+	border: solid .125em /*2px*/ #da7c0c;
 	background: #f78d1d;
 	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
 }
@@ -121,57 +144,199 @@ nav{
 	color: red;
 	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 }
-/*END Join Button-------------------------------------------------------------*/
+/*END Join Button=============================================================*/
 
-/*START News and Information--------------------------------------------------*/
+/*START News and Information==================================================*/
 
 /* Places some spacing between the news section and the CTA. */
 #news{
-	margin-top: 100px;	
-}
+	margin-top: 6.3291139%; /*50px/790px*/}
 
 /* Places the news text into 3 column layout and places padding between the news and gallery. */
 .current_news{
 	-moz-column-count: 3;
-	-moz-column-gap: 25px;
-	padding-bottom: 100px;
+	-moz-column-gap: 1.5em; /*24px;*/
+	margin-bottom: 6.3291139%; /*50px/790px*/
 }
-/*END News and Information----------------------------------------------------*/
+/*END News and Information====================================================*/
 
-/*START Gallery---------------------------------------------------------------*/
+/*START Gallery===============================================================*/
 /*Places border, removes list buttons, sets up padding to gallery thumbnails.*/
 .gallery_list{
-	border: 2px solid #cc9933;
-	border-radius: 20px;
+	border: 0.125em /*2px*/ solid #cc9933;
+	border-radius: 1.25em; /*20px;*/
 	list-style-type: none;
-	width: 640px;
-	margin: 20px auto;
+	width: 81.012658%; /*640px/790px*/
+	margin: 3.125% /*20px/640px*/ auto;
 	overflow: hidden;
-	padding: 5px;
+	padding: 0.78125%; /*5px/640px*/
 }
 
 .gpic_li{
 	float: left;
-	margin-left: 23px;
-	border: 2px solid silver;
+	margin-left: 3.59375%; /*3px;*/
+	border: 0.24em /*4px*/ solid silver;
 }
-/*END Gallery-----------------------------------------------------------------*/
+/*END Gallery=================================================================*/
 
-/*START Misc Coding-----------------------------------------------------------*/
+/*START Misc Coding===========================================================*/
 
 h1, h2, h3, a{
 	font-family: "Emblema One", cursive; /* Custom font from googlefonts */
-	text-shadow: 2px 2px 2px gray;
+	text-shadow: 0.0625em 0.0625em 0.0625em /*1px 1px 1px*/ gray;
+	font-weight: normal;
 }
 
+h1{
+	font-size: 1.875em;/*30px/16px*/
+	text-align: center;
+}
+
+h2 a{
+	font-size: 1.5em;/*24px/16px*/
+}
+
+h3{
+	font-size: 1.25em;/*20px*/
+}
 
 /*Sets basic color of paragraphs.*/
 p{
 	color: silver;
+	font-size: 1em;
 }
 
 /*Clears the floats of elements above it.*/
 .cleardiv{
 	clear: both; 
 }
-/*END Misc Coding-------------------------------------------------------------*/
+/*END Misc Coding=============================================================*/
+
+/*START Media Queries=========================================================*/
+
+	/*Tablet Portrait size to standard 960 (devices and browsers)*/
+	@media screen and (min-width: 768px) and (max-width: 959px){
+		#wrapper{
+			/*background-color: gray;*/
+		}
+		
+		#button_container{
+			float: none;
+			padding-left: 26.315789%; /*200px/790px*/
+		}
+		.current_news{
+			-moz-column-count: 2;
+			-moz-column-gap: 1em; /*24px;*/
+			-moz-column-fill: auto;
+			/*margin-bottom: 6.3291139%; /*50px/790px*/
+		}
+		
+		h1{
+			font-size: 1.8125em;/*29px/16px*/
+		}
+
+		h2 a{
+			font-size: 1.4375em;/*23px/16px*/
+		}
+
+		h3{
+			font-size: 1.1875em;/*19px/16px*/
+		}
+
+		p{
+			font-size: 0.9375em;/*15px/16px*/
+		}		
+		
+	}/*END @media*/
+
+	/*Mobile Landscape Size to Tablet Portrait (devices and browsers)*/
+	@media only screen and (min-width: 480px) and (max-width:767px){
+		#wrapper{
+			/*background-color: blue;*/
+		}	
+			
+		#logo_container{
+			margin: 0 auto;
+		}
+			
+		#nav_container{
+			float: left;
+			padding-left: 150%
+			margin: 0 auto;
+		}
+			
+		#button_container{
+			float: none;
+			padding-left: 26.315789%; /*200px/790px*/
+		}
+			
+		#jedi_container{
+			display: none;
+		}
+			
+		.current_news{
+			-moz-column-count: 1;
+			-moz-column-gap: 0.5em; /*24px;*/
+			-moz-column-fill: auto;
+		}
+			
+		h1{
+			font-size: 1.75em;/*28px/16px*/
+		}
+
+		h2 a{
+			font-size: 1.375em;/*22px/16px*/
+		}
+
+		h3{
+			font-size: 1.125em;/*18px/16px*/
+		}
+
+		p{
+			font-size: 0.875em;/*14px/16px*/
+		}			
+	}/*END @media*/
+	
+	/*Mobile Portrait Size to Mobile Landscape Size (devices and browsers)*/
+	@media only screen and (max-width: 479px){
+		#wrapper{
+			/*background-color: purple;*/
+		}
+			
+		#logo_container{
+			margin: 0 auto;
+		}
+			
+		#jedi_container{
+			display: none;
+		}
+			
+		.cta{
+			background-image: none;
+			padding: 3.5% /*6px;*/
+		}
+		
+		.current_news{
+			-moz-column-count: 1;
+			-moz-column-gap: 0.5em; /*24px;*/
+			-moz-column-fill: auto;			
+		}
+		h1{
+			font-size: 1.6875em;/*27px/16px*/
+		}
+
+		h2 a{
+			font-size: 1.3125em;/*21px/16px*/
+		}
+
+		h3{
+			font-size: 1.0625em;/*17px/16px*/
+		}
+
+		p{
+			font-size: 0.8125em;/*13px/16px*/
+		}
+
+
+	}/*END @media*/
+/*END Media Queries===========================================================*/
