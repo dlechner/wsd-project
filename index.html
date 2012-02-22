@@ -9,7 +9,7 @@
 	
 	<body>
 		<div id="wrapper">
-	<!-- START Main logo and navigation bar at top of page.----------------- -->
+	<!-- START Main logo and navigation bar at top of page.================= -->
 			<div>
 				<div id="logo_container"><img class="logo" src="Images/logo-the-old-republic.png" alt="Image of SWTOR Logo" title="SWTOR Logo"><a href="http://www.swtor.com"></a></div>
 	
@@ -20,16 +20,16 @@
 							<li class="nav_li"><a href="index.html">Home</a></li>
 							<li class="nav_li" ><a href="#news">News</a></li>
 							<li class="nav_li"><a href="#gallery">Gallery</a></li>
-							<li class="nav_li"><a href="#join">Join</a></li>
+							<li class="nav_li"><a href="#table">Join</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 	
 			<div class="cleardiv"></div><!-- Clears floats above -->
-	<!-- END Main Logo and navigation bar.---------------------------------- -->
+	<!-- END Main Logo and navigation bar.================================== -->
 
-	<!-- Call to action area.----------------------------------------------- -->	
+	<!-- Call to action area.=============================================== -->	
 			<div class="cta">
 				<div id="jedi_container"><img class="cta_img" src="Images/jedi-knight.png" alt="Image of Jedi Knight with Blue Light Saber" title="Jedi Knight"></div>
 	
@@ -44,9 +44,9 @@
 			</div>
 	
 		<div class="cleardiv"></div><!-- Clears floats above -->
-<!-- END Call to action area.----------------------------------------------- -->
+<!-- END Call to action area.=============================================== -->
 
-<!-- START News and information article area.------------------------------- -->	
+<!-- START News and information article area.=============================== -->	
 			<div id="news_container">
 				<h2 id="news">Latest SWTOR News and Information</h2>
 					<div class="current_news">	
@@ -56,9 +56,9 @@
 							</div>	
 				</div>
 			</div>		
-<!-- END News and information article area.--------------------------------- -->
+<!-- END News and information article area.================================= -->
 
-<!-- START Gallery screenshot area.----------------------------------------- -->
+<!-- START Gallery screenshot area.========================================= -->
 
 			<div>
 				<h2 id="gallery">Gallery</h2>
@@ -84,15 +84,113 @@
 				</ol>
 			</div>
 
-<!-- END Gallery screenshot area.----------------------------------------- -->
+<!-- END Gallery screenshot area.=========================================== -->
 
-<!-- START Footer area.----------------------------------------------------- -->
-			<div>	
+<!-- START Table element.=================================================== -->
+			<div id="table">
+				<h2 id="officer_list">Officer List</h2>
+				<p>Below is a list of our officer corp.  If you have any questions about the guild or are awaiting an invite please feel free to contact them when they are online.</p>
+				<table summary="Officer Contact List">
+					<tr>
+						<th>Name</th>
+						<th>Character Name</th>
+						<th>Advanced Class</th>
+						<th>Online</th>
+					</tr>
+					<tr>
+						<td>David</td>
+						<td>Scrimshaw</td>
+						<td>Jedi Guardian</td>
+						<td>Evenings</td>
+					</tr>
+					<tr>
+						<td>Tom</td>
+						<td>Geriko</td>
+						<td>Commando</td>
+						<td>Evenings</td>
+					</tr>
+					<tr>
+						<td>Marc</td>
+						<td>Intrexx</td>
+						<td>Jedi Sage</td>
+						<td>Evenings</td>
+					</tr>
+					<tr>
+						<td>Craig</td>
+						<td>Kijana</td>
+						<td>Jedi Guardian</td>
+						<td>Evenings</td>
+					</tr>					
+				</table>
+			</div>
+<!-- END Table element.===================================================== -->
+
+<!-- START Form element.==================================================== -->
+	<h2 id="join">Join or contact Legion of the Republic</h3>
+	<p>To apply for guild membership please fill out the form below.  There is an option to send a general message if you have questions or concerns about the guild or its members.</p>
+		<form method:"get" action="mailto:example@example.com">
+			<fieldset>
+				<legend>Application or Contact Form</legend>
+					<p>
+						<label for="rl_name">Your RL first name:</label>
+						<input type="text" name="rl_name" id="rl_name"/>
+					</p>
+					
+					<p>
+						<label for="char_name">Character Name:</label>
+						<input type="text" name="char_name" id="char_name"/>					
+					</p>
+					
+					<p>
+						<label for="class">Characters advanced class?</label>
+						<select name="class" id="class">
+							<option>Jedi Guardian</option>
+							<option>Jedi Sentinel</option>
+							<option>Jedi Sage</option>
+							<option>Jedi Shadow</option>
+							<option>Commando</option>
+							<option>Vanguard</option>
+							<option>Gunslinger</option>
+							<option>Scoundrel</option>
+						</select>
+					</p>
+					
+					<p>Normally I am online (US CST):</p>
+					<p>
+						<input type="radio" name="playtime" id="morning" value="morning"/>
+						<label for="morning">In the morning.</label>
+						</br>
+						
+						<input type="radio" name="playtime" id="afternoon" value="afternoon"/>
+						<label for="afternoon">In the afternoon.</label>
+						</br>
+						
+						<input type="radio" name="playtime" id="evening" value="evening"/>
+						<label for="evening">In the evening.</label>
+						</br>						
+					</p>
+					
+					<p><label for="message">Tell us about yourself, your character spec, and why you want to join.  If this is a general inquiry please fill in your questions or concerns.</label></p>
+					<p><textarea name="message" rows="10" cols="50"></textarea></p>
+					
+					<p>
+						<input type="checkbox" name="ing_email" id="ing_email"/>
+						<label for="ing_email">Please contact me through in-game email.</label>
+					</p>
+					
+					<p><input type="submit"/></p>
+			</fieldset>
+		</form>
+
+<!-- END Form element.====================================================== -->
+
+<!-- START Footer area.===================================================== -->
+			<div id="footer">	
 				<footer>
 					<p>All images protected under Copyright and belong to their owners: Lucasarts, Bioware, EA Games.  Site is registered as a fansite under www.swtor.com.</p>
 				</footer>
 			</div>
-<!-- END Footer area.----------------------------------------------------- -->
+<!-- END Footer area.======================================================= -->
 		</div><!-- END WRAPPER -->
 	</body>
 </html>
