@@ -91,36 +91,41 @@
 				<h2 id="officer_list">Officer List</h2>
 				<p>Below is a list of our officer corp.  If you have any questions about the guild or are awaiting an invite please feel free to contact them when they are online.</p>
 				<table summary="Officer List">
-					<tr>
-						<th>Name</th>
-						<th>Character Name</th>
-						<th>Advanced Class</th>
-						<th>Online</th>
-					</tr>
-					<tr>
-						<td>David</td>
-						<td>Scrimshaw</td>
-						<td>Jedi Guardian</td>
-						<td>Evenings</td>
-					</tr>
-					<tr>
-						<td>Tom</td>
-						<td>Geriko</td>
-						<td>Commando</td>
-						<td>Evenings</td>
-					</tr>
-					<tr>
-						<td>Marc</td>
-						<td>Intrexx</td>
-						<td>Jedi Sage</td>
-						<td>Evenings</td>
-					</tr>
-					<tr>
-						<td>Craig</td>
-						<td>Kijana</td>
-						<td>Jedi Guardian</td>
-						<td>Evenings</td>
-					</tr>					
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Character Name</th>
+							<th>Advanced Class</th>
+							<th>Online</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr>
+							<td>David</td>
+							<td>Scrimshaw</td>
+							<td>Jedi Guardian</td>
+							<td>Evenings</td>
+						</tr>
+						<tr>
+							<td>Tom</td>
+							<td>Geriko</td>
+							<td>Commando</td>
+							<td>Evenings</td>
+						</tr>
+						<tr>
+							<td>Marc</td>
+							<td>Intrexx</td>
+							<td>Jedi Sage</td>
+							<td>Evenings</td>
+						</tr>
+						<tr>
+							<td>Craig</td>
+							<td>Kijana</td>
+							<td>Jedi Guardian</td>
+							<td>Evenings</td>
+						</tr>
+					</tbody>	
 				</table>
 			</div>
 <!-- END Table element.===================================================== -->
@@ -170,8 +175,22 @@
 						<br/>						
 					</p>
 					
-					<p><label for="message">Tell us about yourself, your character spec, and why you want to join.  If this is a general inquiry please fill in your questions or concerns.</label></p>
-					<p><textarea name="message" rows="10" cols="50"></textarea></p>
+					<p>
+						<label for="message">Tell us about yourself, your character spec, and why you want to join.  Describe your preferred role for Operations according to the list below.</label>
+					</p>
+					<dl>
+						<dt>Tank</dt>
+							<dd>Ops member that focuses on keeping aggro of mobs off the rest of the members.</dd>
+						<dt>DPS</dt>
+							<dd>Ops member that focuses on maximizing damage per second to eliminate mobs as fast as possible.</dd>
+						<dt>Heals</dt>
+							<dd>Ops member that focuses on keeping members healed during mob encounters</dd>
+						<dt>Support</dt>
+							<dd>Ops member that focuses on crowd control, DPS, off-heals and off-tanking as needed to increase survivability of the ops group.</dd>
+					</dl>		
+					<p>
+						<textarea name="message" rows="10" cols="50"></textarea>
+					</p>
 					
 					<p>
 						<input type="checkbox" name="ing_email" id="ing_email"/>

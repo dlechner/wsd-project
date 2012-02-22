@@ -295,8 +295,15 @@ p{
 
 		td{
 			font-size: 0.9375em;/*15px/16px*/
-		}		
+		}
 		
+		dt{
+			font-size: 1.1875em;/*19px/16px*/
+		}
+
+		dd{
+			font-size: 0.9375em;/*15px/16px*/
+		}		
 	}/*END @media*/
 
 	/*Mobile Landscape Size to Tablet Portrait (devices and browsers)*/
@@ -352,6 +359,14 @@ p{
 
 		td{
 			font-size: 0.875em;/*14px/16px*/
+		}
+		
+		dt{
+			font-size: 1.125em;/*18px/16px*/
+		}
+
+		dd{
+			font-size: 0.875em;/*14px/16px*/
 		}		
 	}/*END @media*/
 	
@@ -400,6 +415,14 @@ p{
 		}
 
 		td{
+			font-size: 0.75em;/*12px/16px*/
+		}
+		
+		dt{
+			font-size: 0.8125em; /*13px/16px*/
+		}
+
+		dd{
 			font-size: 0.75em;/*12px/16px*/
 		}
 		
