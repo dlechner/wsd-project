@@ -215,9 +215,6 @@ th{
 	border-radius: 1.25em; /*20px;*/
 	border-width: 0.25em; /*4px;*/
 	padding: 0.3em;
-	p{
-		color: #cc9933;
-	}
 }
 /*END Footer Area=============================================================*/
 
@@ -314,7 +311,7 @@ p{
 			
 		#nav_container{
 			float: left;
-			padding-left: 150%
+			padding-left: 150%;
 			margin: 0 auto;
 		}
 			
