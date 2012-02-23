@@ -1,7 +1,7 @@
 body{
 	color: #cc9933;
 	max-width: 960px;
-	font: 100%;/*16px*/
+	font-size: 100%;/*16px*/
 	margin: 0 auto;
 	background: black;
 }
@@ -118,7 +118,6 @@ nav{
 	-moz-border-radius: .5em;
 	border-radius: .5em;
 	-moz-box-shadow: 0 0.125em 0.24em /*2px 4px*/ rgba(0,0,0,.2);
-	box-shadow: 0 0.125em 0.24em /*2px 4px*/ rgba(0,0,0,.2);
 }
 .button:hover {
 	text-decoration: none;
